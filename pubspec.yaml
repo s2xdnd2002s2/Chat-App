@@ -1,0 +1,61 @@
+name: messenger
+description: A new Flutter project.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.6 <4.0.0'
+
+# isar_version: &isar_version 3.1.0
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_svg: ^2.0.7
+  # isar: *isar_version
+  path_provider:
+  firebase_storage:
+  firebase_core:
+  # isar_flutter_libs: *isar_version # contains Isar Core
+  firebase_messaging: ^14.7.6
+  permission_handler:
+  cloud_firestore: ^4.13.6
+  firebase_auth:
+  flutter_bloc: ^8.1.3
+  equatable: ^2.0.5
+  fl_country_code_picker: ^0.1.7+1
+  google_sign_in: ^6.1.6
+  cached_network_image: ^3.3.0
+  image_picker: ^0.8.6
+  http: ^1.1.0
+
+  cupertino_icons: ^1.0.2
+  flutter_notification_channel: ^2.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+#  flutter_launcher_icons: "^0.13.1"
+  # isar_generator: *isar_version
+  build_runner: any
+  json_serializable:
+  # isar_flutter_libs:
+  flutter_lints: ^2.0.0
+
+
+#flutter_launcher_icons:
+#  android: true
+#  image_path: "assets/images/icon.png"
+#  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/vectors/
+
+  fonts:
+    - family: Mulish
+      fonts:
+        - asset: assets/fonts/Mulish-Regular.ttf
